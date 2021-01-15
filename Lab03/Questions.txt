@@ -1,0 +1,9 @@
+1- Make sure you have mongoDB installed and running on your system. Create a SchoolDB with a Students collection. Then add the following documents:
+
+Jack, 3.0
+Jim, 2.8
+Jill, 3.3
+
+2- Export the SchoolDB to a json file as a pretty a array and upload that.
+
+3- Import the games DB attached to this assignment. Then write a NodeJS program to display 3 games or as many as the user specifies but not exceeding 7.
