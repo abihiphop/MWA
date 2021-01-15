@@ -1,0 +1,12 @@
+Problem 01 
+  - use http://localhost:3000/api/games/    -- to see all games , paginated if query string with offset and count is provided
+  - use http://localhost:3000/api/games/gameID    -- to see all specific game with given ID  
+  - Note: All all checking and hardening are also done
+problem 02 
+  - use http://localhost:3000/api/students/    -- to see all students  
+  - use http://localhost:3000/api/students/studentID    -- to see a particular student with given ID  
+    - use http://localhost:3000/api/students/studentID/Address    -- to see all addresses of a particular student   
+      - use http://localhost:3000/api/students/studentID/Address/AddressID    -- to see a particular address of a particular student given addressId and StudentID
+  - Note: All all checking and hardening are also done
+Problem 03
+  - Title choosen to work as project is : Simple E-Commerce Application
