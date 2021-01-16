@@ -23,12 +23,12 @@ Students.findById(studentID).select("Address").exec(function (err, addresses) {
 
 module.exports.getOneAddressOfOneStudent = function (req, res) {
   const studentID = req.params.studentID;
-  const addressID = req.params.addressID;
- 
-  Students.findById(studentID).select("Address").findOne({"Address.$[]._Id":addressID}).exec(function (err, address) {
+  const addressID = req.params.addressID; 
+  Students.findById(studentID).select("Address").exec(function (err, address) {
+   const addr = address.Address.id(addressID);
     const response = {
       status: 200,
-      message: address
+      message: addr
     };
     if (err) {
       console.log(err);
