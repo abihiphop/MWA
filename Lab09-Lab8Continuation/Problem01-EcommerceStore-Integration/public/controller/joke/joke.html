@@ -1,0 +1,14 @@
+<head> 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<h1>Joke Page</h1>
+<ul class="list-group" style="text-align: left;">
+  <li class="list-group-item" ng-repeat="joke in JokeCtrlr.JokeContent">
+    {{joke.type}} <br />
+    {{joke.setup}} <br />
+    Show Punchline
+    <input type="checkbox" ng-model="showPunchline" />
+    <div ng-show="showPunchline">{{joke.punchline}}</div>
+  </li>
+</ul>

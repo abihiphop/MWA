@@ -1,0 +1,15 @@
+<head> </head>
+<h1>Selected Game is {{GameCtrlr.SingleGameContent.title}}</h1>
+<h2>Some info about this Game</h2>
+<div style="margin: auto; width: 50%; text-align: left">
+  <ul class="list-group" style="text-align: left">
+    <li class="list-group-item">
+        Title: {{GameCtrlr.SingleGameContent.title}} <br />
+      Game ID: {{GameCtrlr.SingleGameContent._id}} <br />
+      Designers: <span ng-repeat="designer in GameCtrlr.SingleGameContent.designers">{{designer}}</span> <br />
+      Price: {{GameCtrlr.SingleGameContent.price | currency:"€"}} <br />
+      Min Players: {{GameCtrlr.SingleGameContent.minPlayers}} <br />
+      Min Players: {{GameCtrlr.SingleGameContent.maxPlayers}} <br />
+    </li>
+  </ul>
+</div>

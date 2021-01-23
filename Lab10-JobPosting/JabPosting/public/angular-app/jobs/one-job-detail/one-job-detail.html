@@ -1,0 +1,71 @@
+<div class="container  p-3 my-3 border" style="margin: auto; margin-top:20px; width: 50%;">
+<h1>Detail of a job title {{JdtlCtrlr.OneJobDetail.title}}</h1>
+
+<div>
+  {{JdtlCtrlr.OneJobDetail.title}}
+
+  <ul>
+    <li>companyName: {{JdtlCtrlr.OneJobDetail.companyName}}</li>
+    <li>salary: {{JdtlCtrlr.OneJobDetail.salary}}</li>
+    <li>location:</li>
+    <ul>
+      <li>country: {{JdtlCtrlr.OneJobDetail.country}}</li>
+      <li>state: {{JdtlCtrlr.OneJobDetail.state}}</li>
+      <li>city: {{JdtlCtrlr.OneJobDetail.city}}</li>
+      <li>zip: parseInt({{JdtlCtrlr.OneJobDetail.zip}}</li>
+    </ul>
+    <li>jobType: {{JdtlCtrlr.OneJobDetail.jobType}}</li>
+    <li>description:</li>
+
+    <ul>
+      <li>summary: {{JdtlCtrlr.OneJobDetail.summary}}</li>
+      <li>benefits: {{JdtlCtrlr.OneJobDetail.benefits}}</li>
+    </ul>
+    <li>skills: {{JdtlCtrlr.OneJobDetail.skills}}</li>
+    <li>qualification:</li>
+    <ul>
+      <li>experience: {{JdtlCtrlr.OneJobDetail.experience}}</li>
+      <li>knowledge: {{JdtlCtrlr.OneJobDetail.knowledge}}</li>
+      <li>education: {{JdtlCtrlr.OneJobDetail.education}}</li>
+      <li>language: {{JdtlCtrlr.OneJobDetail.language}}</li>
+    </ul>
+
+    <li>postDate: {{JdtlCtrlr.OneJobDetail.postDate}}</li>
+  </ul>
+</div>
+
+ 
+
+<a ng-href="#/jobs/{{JdtlCtrlr.OneJobDetail._id}}/delete"   class="btn btn-danger" style="width:100px">Delete</a>  
+<a ng-href="" ng-click="EditClicked=true"  class="btn btn-warning" style="width:100px">Edit</a>  <br><br><br>
+ 
+</div>
+
+
+
+<div ng-if="EditClicked" style="margin: auto; margin-top:20px; width: 50%;" class="container card"> 
+    <div  class="form-control btn-primary" style="text-align: center;"> Please update your Job below !</div> 
+            <form ng-submit="JupdtCtrlr.updateJob()">
+                <div class="form-group">
+                  <label >Job Title:</label>
+                  <input type="text" class="form-control" value="{{JdtlCtrlr.OneJobDetail.title}}" ng-model="JupdtCtrlr.title" >
+                </div>
+                            
+                  <div class="form-group">
+                    <label >Experience:</label>
+                    <input type="text" class="form-control" placeholder="Enter experience" ng-model="JupdtCtrlr.experience">
+                  </div>
+             
+                  <div class="form-group">
+                    <label >Salary:</label>
+                    <input type="text" class="form-control" placeholder="Enter Salary" ng-model="JupdtCtrlr.salary">
+                  </div>
+                  <div class="form-group">
+                    <label >Post Date:</label>
+                    <input type="text" class="form-control" placeholder="Enter date of post" ng-model="JupdtCtrlr.postDate">
+                  </div>
+              
+                <button type="submit" class="btn btn-primary">Update</button>
+              </form>
+ 
+  </div>

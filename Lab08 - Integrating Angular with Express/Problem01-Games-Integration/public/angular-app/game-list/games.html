@@ -1,0 +1,12 @@
+
+<h1>List of available games</h1>
+<div style="margin:auto; width:50%; text-align: left; ">
+<ui class="list-group" style="text-align: left;">
+ <li class="list-group-item" ng-repeat="game in GamesCtrlr.GameContent">
+  <a ng-href="#/games/{{game._id}}" style="color: aliceblue;"> {{game.title}} <br />
+   <!-- Show Punchline
+   <input type="checkbox" ng-model="showPunchline" />
+   <div ng-show="showPunchline">{{joke.punchline}}</div> -->
+ </li>
+</ul>
+</div>

@@ -1,0 +1,9 @@
+<div style="margin: auto; margin-top:10px;width: 40%;">
+  <h1 style="text-align: center;">Recent List of Jobs</h1>
+
+  <ul  ng-repeat="job in JLCtrlr.JobsContent" >
+        <div class="form-control"> 
+           <a ng-href="#/jobs/{{job._id}}" >{{job.title}}</a> 
+        </div>
+  </ul>
+</div>

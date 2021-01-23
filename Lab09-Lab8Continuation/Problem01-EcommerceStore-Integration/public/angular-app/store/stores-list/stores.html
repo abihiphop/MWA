@@ -1,0 +1,119 @@
+<h1>List of available stores</h1>
+
+<div style="margin:auto; width:50%; text-align: left;"> 
+  <a id="link-2" href="" ng-click="AddStoreLinkClicked = true">Add new Store</a> 
+  <a id="link-2" href="" ng-click="AddStoreLinkClicked = true">| Next</a><br />
+ </div>
+
+<div style="margin:auto; width:50%; text-align: left; ">
+<ul class="list-group" style="text-align: left;">
+ <li class="list-group-item" ng-repeat="store in StoresCtrlr.StoresContent">
+  <a ng-href="#/stores/{{store._id}}" style="color: aliceblue;"> {{store.storeName}} </a> 
+  <a ng-href="#/stores/delete/{{store._id}}" style="color: rgb(247, 167, 20); margin-left: 30px;"> Delete Store</a><br />
+   <!-- Show Punchline
+   <input type="checkbox" ng-model="showPunchline" />
+   <div ng-show="showPunchline">{{joke.punchline}}</div> -->
+ </li>
+</ul>
+</div>
+<br>
+
+<div ng-if="This.AddedStoreMessage=='success'" >
+  <p class="btn btn-success"> Successfully registered </p>
+</div>
+ 
+
+<div ng-hide="This.AddedStoreMessage=='success'" ng-app="MyApp" ng-if="AddStoreLinkClicked" 
+ng-model="AddStoreForm" ng-controller="AddStoreController as This"  style="margin:auto; width:50%; background-color: rgb(229, 236, 240); color: rgb(22, 46, 83); overflow-y: scroll ; ">
+  <h5>Please insert your store details below  </h5>  
+
+<form  name="addstore" ng-submit="This.myaddstore()"  style="display: grid; grid-template-columns: 50% 50%;" >
+  <div style="float: left; text-align: left; margin-left: 10px;" >
+     <div>
+     Store Name:  <span class="asterisk">*</span> 
+      <input type="text" required placeholder="Store Name" ng-model="This.storeName"></input> 
+    </div>
+ 
+   
+      <div>
+        Store Address: <span class="asterisk">*</span> <br> 
+      </div>
+      <div>
+          country: <span class="asterisk">*</span> <br> 
+          <input type="text" required pattern="[a-zA-Z]+" placeholder="country" ng-model="This.country"></input>
+        </div>
+        <div>
+          State: <span class="asterisk">*</span> <br> 
+          <input type="text" required pattern="[a-zA-Z]+" placeholder="State" ng-model="This.state"></input>
+        </div>
+        <div>
+          City: <span class="asterisk">*</span> <br> 
+          <input type="text" required pattern="[a-zA-Z]+" placeholder="City" ng-model="This.city"></input>
+        </div>
+        <div>
+          Zip: <span class="asterisk">*</span> <br> 
+          <input type="text" required pattern="\d{5}" placeholder="Zip" ng-model="This.zip"></input>
+        </div>
+        <div>
+          Street: <br> 
+          <input type="text" required  placeholder="Street" ng-model="This.street"></input>
+        </div>
+        <div>
+          Email: <br> 
+          <input type="text" required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" placeholder="Email" ng-model="This.email"></input>
+        </div>
+        <div>
+          Contact Person: <span class="asterisk">*</span> <br> 
+          <input type="text" required pattern="[a-zA-Z]+" placeholder="Contact Person" ng-model="This.contactPerson"></input>
+        </div>
+      
+  </div>
+
+  <div style="float: right; text-align: left;" >
+  
+    <div>
+       Products: <br> 
+     </div>
+ 
+      <div>
+        Product Name:    <span class="asterisk">*</span> <br> 
+        <input type="text" required pattern="[a-zA-Z]+" placeholder=" Product Name" ng-model="This.productName"></input>
+
+      </div>
+      <div>
+          Product Description: <span class="asterisk">*</span> <br> 
+          <input type="text" required pattern="[a-zA-Z]+" placeholder=" Product Description" ng-model="This.productDescription"></input>
+        </div>
+        <div>
+          Product Tag: <span class="asterisk">*</span> <br> 
+          <input type="text" required pattern="[a-zA-Z]+" placeholder="Product Tag" ng-model="This.productTag"></input>
+        </div>
+        <div>
+          Product Price: <span class="asterisk">*</span> <br> 
+          <input type="text" required pattern="[0-9]+" placeholder="Product Price" ng-model="This.productPrice"></input>
+        </div>
+        <div>
+          Currency: <span class="asterisk">*</span> <br> 
+          <input type="text" required pattern="[a-zA-Z]+" placeholder="Currency" ng-model="This.currency"></input>
+        </div>
+        <div>
+        
+ 
+   </div>  
+   <br>
+   <br>
+   <br>
+   <br>  
+    
+   
+   <input type="submit" id="add" value="Submit" class="btn btn-primary" style="width: 120px;" /> 
+
+  </form>
+
+</div>
+
+<br>
+
+ 
+
+ 

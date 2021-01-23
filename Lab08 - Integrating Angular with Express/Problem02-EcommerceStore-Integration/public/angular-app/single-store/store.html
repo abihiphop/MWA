@@ -1,0 +1,27 @@
+<h1>Selected Store is {{StoreCtrlr.StoreContent.storeName}}</h1>
+<h2>Some info about this Store</h2>
+<div style="margin: auto; width: 50%; text-align: left">
+  <ul class="list-group" style="text-align: left">
+    <li class="list-group-item">
+      Store Name: {{StoreCtrlr.StoreContent.storeName}} <br />
+      Store Address: <br />
+      <ul ng-repeat="address in StoreCtrlr.StoreContent.storeAddress">
+        Country:{{address.country}}<br />
+        State:{{address.state}}<br />
+        City:{{address.city}}<br />
+        Zip:{{address.zip}}<br />
+        Street: {{address.street}}<br />
+      </ul>
+      Store Email: {{StoreCtrlr.StoreContent.email}} <br />
+      Contact Person: {{StoreCtrlr.StoreContent.contactPerson}}<br />
+      Products:
+      <ul>
+        <span ng-repeat="product in StoreCtrlr.StoreContent.products"> 
+          <a ng-href="#/stores/{{StoreCtrlr.StoreContent._id}}/products/{{product._id}}" style="color: yellowgreen;">{{product.productName}}</a>    <br />
+        </span> 
+        
+     
+      </ul>
+    </li>
+  </ul>
+</div>

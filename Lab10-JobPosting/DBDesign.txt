@@ -1,0 +1,41 @@
+Write a data-driven MEAN CRUD application to mange JobSeraching.
+
+
+
+db.jobs.insert(
+
+title: String, Required,
+companyName:
+jobType
+salary: Number,default:USD
+location:
+{
+	country: String, Required
+	state: String, Required
+	city:  [String]String, Required
+	zip:Number
+},
+description:{
+summary: String , Required
+Benefits: [String] 
+skills:[String] , Required
+}
+Qualification:
+{
+Experience: Number, , Required
+knowledge:[String], , Required
+education:String, , Required
+Language: String,(Required)
+} 
+postDate: Date, Required
+}
+reviews: 
+{
+date, 
+review, 
+nameOfUser
+}
+ 
+ 
+ 
+ 

@@ -1,0 +1,14 @@
+
+<h1>List of available stores</h1>
+<div style="margin:auto; width:50%; text-align: left; ">
+<ui class="list-group" style="text-align: left;">
+ <li class="list-group-item" ng-repeat="store in StoresCtrlr.StoresContent">
+  <a ng-href="#/stores/{{store._id}}" style="color: aliceblue;"> {{store.storeName}} <br />
+   <!-- Show Punchline
+   <input type="checkbox" ng-model="showPunchline" />
+   <div ng-show="showPunchline">{{joke.punchline}}</div> -->
+ </li>
+</ul>
+</div>
+
+

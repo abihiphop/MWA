@@ -1,0 +1,80 @@
+
+
+ <div style="margin: auto; margin-top:20px; width: 50%;" class="container card"> 
+    <div ng-if="This.AddedJob" class="form-control btn-success" style="text-align: center;"> Successfully Inserted !</div> 
+            <form ng-submit="This.addNewJob()">
+                <div class="form-group">
+                  <label >Job Title:</label>
+                  <input type="text" class="form-control" placeholder="Enter job title" ng-model="This.title" >
+                </div>
+                <div class="form-group">
+                    <label >Company Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter company name" ng-model="This.companyName">
+                  </div>
+                 
+                   <div class="form-group">
+                    <label >Country:</label>
+                    <input type="text" class="form-control" placeholder="Enter country name" ng-model="This.country">
+                  </div>
+                  <div class="form-group">
+                    <label >State:</label>
+                    <input type="text" class="form-control" placeholder="Enter state" ng-model="This.state">
+                  </div>
+                  <div class="form-group">
+                    <label >City:</label>
+                    <input type="text" class="form-control" placeholder="Enter city" ng-model="This.city">
+                  </div>
+                  <div class="form-group">
+                    <label >Zip:</label>
+                    <input type="text" class="form-control" placeholder="Enter zip" ng-model="This.zip">
+                  </div>
+                 
+                  <div class="form-group">
+                    <label >Job Type:</label>
+                    <input type="text" class="form-control" placeholder="Enter Job Type" ng-model="This.jobType">
+                  </div>
+             
+                  <div class="form-group">
+                    <label >Job summary:</label>
+                    <input type="text" class="form-control" placeholder="Enter job summary" ng-model="This.summary">
+                  </div>
+                  <div class="form-group">
+                    <label >Benefits :</label>
+                    <input type="text" class="form-control" placeholder="Enter benefits comma separated" ng-model="This.benefits">
+                  </div>
+                  <div class="form-group">
+                    <label >Skills:</label>
+                    <input type="text" class="form-control" placeholder="Enter skills comma separated" ng-model="This.skills">
+                  </div>
+             
+                  <div class="form-group">
+                    <label >Experience:</label>
+                    <input type="text" class="form-control" placeholder="Enter experience" ng-model="This.experience">
+                  </div>
+                  <div class="form-group">
+                    <label >knowledge:</label>
+                    <input type="text" class="form-control" placeholder="Enter knowledge" ng-model="This.knowledge">
+                  </div>
+                  <div class="form-group">
+                    <label >Education:</label>
+                    <input type="text" class="form-control" placeholder="Enter education" ng-model="This.education">
+                  </div>
+                  <div class="form-group">
+                    <label >Language:</label>
+                    <input type="text" class="form-control" placeholder="Enter language" ng-model="This.language">
+                  </div>
+                  <div class="form-group">
+                    <label >Salary:</label>
+                    <input type="text" class="form-control" placeholder="Enter Salary" ng-model="This.salary">
+                  </div>
+                  <div class="form-group">
+                    <label >Post Date:</label>
+                    <input type="text" class="form-control" placeholder="Enter date of post" ng-model="This.postDate">
+                  </div>
+
+            
+              
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+ 
+  </div>

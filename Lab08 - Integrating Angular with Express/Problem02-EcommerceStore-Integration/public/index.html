@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My Angular App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/custom.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script src ="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.min.js"></script>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angular-route/angular-route.js"></script>
+    <script src="./angular-app/app2.js"></script>
+    <!-- <script src="controller.js"></script> -->
+    <script src="./angular-app/store-factory/store-factory.js"></script>
+    <script src="./angular-app/stores-list/store-list-controller.js"></script>
+    <script src="./angular-app/single-store/single-store-controller.js"></script>
+    <script src="./angular-app/single-product/single-product-controller.js"></script>
+
+
+ 
+
+    <script src="./controller/home/homeController.js"></script>
+    <script src="./controller/joke/jokeController.js"></script>
+
+    <script src="jquery/jquery-3.5.1.js"></script>
+    
+  </head>
+
+  <body>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+      <h1>Welcome to my first Angular Applciation</h1>
+      <p>Development on progress !</p> 
+    </div>
+   
+  <div class="text-center" style="margin-top:20px" ng-view></div>
+    <footer class="footer">
+      <div class="container">
+        <p class="test-muted text-center">
+          <a href="https://compro.miu.edu" target="_blank">
+            <img
+              src="images/compro-web-logo-442x112.png"
+              height="60"
+              alt="MIU Compro"
+            />
+          </a>
+          <br />
+          <small class="text-center"
+            >&copy;2020 Maharishi International University. All Rights Reserved.
+          </small>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

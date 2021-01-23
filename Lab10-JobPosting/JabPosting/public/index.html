@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="JobsApp">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.min.js"></script>
+    <!-- <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angular-route/angular-route.js"></script> -->
+
+    <script src="./angular-app/app2.js"></script>
+
+    <script src="./angular-app/jobs/jobs-factory/jobs-factory.js"></script>
+    <script src="./angular-app/jobs/jobs-list/jobs-list-controller.js"></script>
+    <script src="./angular-app/jobs/one-job-detail/job-detail-controller.js"></script>
+    <script src="./angular-app/jobs/job-add/job-add-controller.js"></script>
+    <script src="./angular-app/jobs/job-delete/job-delete-controller.js"></script>
+    <script src="./angular-app/jobs/jobs-update/jobs-update-controller.js"></script>
+
+  </head>
+  
+  <body>
+    <div ng-view></div>
+  </body>
+</html>

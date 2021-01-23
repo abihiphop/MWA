@@ -1,0 +1,22 @@
+
+<div  style="margin:auto; width:50%; background-color: rgb(229, 236, 240); color: rgb(22, 46, 83);  text-align: left;">
+    <h5>Please insert your Game details below  </h5>  
+  
+  <form  name="addGame" ng-submit="gameVar.addGame()"  >
+        <div>
+       Game Title:  <span class="asterisk">*</span>  <br>    
+        <input type="text" required placeholder="Store Name" ng-model="This.gameTitle"></input> 
+      </div>
+        <div>
+            Reviews: <span class="asterisk">*</span> <br> 
+            <input type="text" required pattern="[1-6]" placeholder="country" ng-model="This.reviews"></input>
+          </div>
+          <div>
+            Min-Age: <span class="asterisk">*</span> <br> 
+            <input type="text" required pattern="[1-9]+" placeholder="State" ng-model="This.minAge"></input>
+          </div>      
+     <input type="submit"  value="Submit" class="btn btn-primary" style="width: 120px;" /> 
+  
+    </form>
+  
+  </div>
