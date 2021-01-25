@@ -1,0 +1,21 @@
+<div style="margin: auto; margin-top: 10px; width: 40%">
+  <h1 style="text-align: center">Recent List of Jobs</h1>
+
+  <span style="margin-left: 120px; width: 300px; align-self: center">
+    Search Jobs by title:
+    <input ng-model="mySearch" />
+  </span>
+  <br />
+  <br />
+  <img ng-hide="This.CitiesContent" ng-src="../../../images/spinner.gif" style="margin-left: 120px;">
+  <ul ng-repeat="city in This.CitiesContent | filter:mySearch| limitTo:This.limit" in-view="This.loadMore($last, $inview)" >
+    <div class="form-control" style="text-align: left">
+      <a ng-href="#/cities/{{city._id}}">{{city.city}}</a>
+      <span>===> {{city.state}} </span>
+    </div>
+  </ul>
+</div>
+
+<br />
+<br />
+<br />

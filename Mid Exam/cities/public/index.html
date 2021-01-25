@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app="CitiesApp">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/custom.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-inview/3.0.0/angular-inview.min.js"></script>
+
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angular-route/angular-route.js"></script>
+
+    <script src="./angular-app/app2.js"></script>
+
+    <script src="./angular-app/cities/cities-factory/cities-factory.js"></script>
+    <script src="./angular-app/cities/cities-list/cities-list-controller.js"></script>
+    <script src="./angular-app/infinite-scrol/infinite-scroll-controller.js"></script>
+    <script src="./angular-app/cities/one-city-detail/city-detail-controller.js"></script>
+    <script src="./angular-app/cities/city-add/city-add-controller.js"></script>
+    <script src="./angular-app/cities/city-delete/city-delete-controller.js"></script>
+    <script src="./angular-app/cities/cities-update/cities-update-controller.js"></script>
+    <script src="./angular-app/cities/cities-update/cities-update-controller.js"></script>
+  </head>
+
+  <body>
+    <div class="fixed-header">
+      <h1 style="text-align: center;">Cities Applciation</h1>
+      <div class="container">
+        <nav>
+          <span>
+          <a href="#/">Home</a>
+          <a href="#/cities">View All Cities</a>
+          <a href="#/cities/add">Add new City</a>
+          </span>
+
+        
+          
+            
+        </nav>
+      </div>
+    </div>
+    <!--    
+  <div class="text-center" style="margin-top:20px;     overflow-y: scroll ; min-width: 800px;" ng-view>
+  
+   </div>
+<br> -->
+<br><br><br>
+    <div class="container" ng-view>
+    </div>
+    <div class="fixed-footer">
+         <p class="test-muted text-center">
+          <a href="https://compro.miu.edu" target="_blank">
+            <img
+              src="images/compro-web-logo-442x112.png"
+              height="60"
+              alt="MIU Compro"
+            />
+          </a>
+          <br />
+          <small class="text-center"
+            >&copy;2020 Maharishi International University. All Rights Reserved.
+          </small>
+        </p>
+     </div>
+  </body>
+</html>

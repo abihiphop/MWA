@@ -1,0 +1,27 @@
+<div ng-if="This.OneCityDetail.city" class="container  p-3 my-3 border" style="margin: auto; margin-top:20px; width: 50%;">
+<h1>Detail of a job title {{This.OneCityDetail.title}}</h1>
+
+<div>
+    <table style="border: solid 1px; width: 100%;" class="form-group">
+ 
+    <tr><td>City: </td><td style="text-align:left">{{This.OneCityDetail.city}}</td></tr>
+    <tr><td>Zip: </td><td style="text-align:left">{{This.OneCityDetail.zip}}</td></tr>
+    <tr><td>location:</td><td style="text-align:left"></td></tr>
+ 
+      <tr><td>X Coordingate: </td><td style="text-align:left">{{This.OneCityDetail.loc.x}}</td></tr>
+      <tr><td>Y Coordinate: </td><td style="text-align:left">{{This.OneCityDetail.loc.y}}</td></tr>
+      <tr><td>Population: </td><td style="text-align:left">{{This.OneCityDetail.pop}}</td></tr>
+      <tr><td>State: </td><td style="text-align:left">{{This.OneCityDetail.state}}</td></tr>
+  </table>
+</div>
+
+ 
+
+<a ng-href="#/cities/{{This.OneCityDetail._id}}/delete"   class="btn btn-danger" style="width:100px">Delete</a>  
+<a ng-href="#/cities/{{This.OneCityDetail._id}}/update"   class="btn btn-warning" style="width:100px">Edit</a>   
+ 
+</div>
+<br><br>
+
+
+
