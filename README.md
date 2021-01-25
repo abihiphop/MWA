@@ -1,2 +1,2 @@
 # MWA
-Modern Web Application - using MEAN ( MongoDB, Exress , Angular , Nodejs )
+Modern Web Application - MEAN Stack ( MongoDB, Exress , Angular , Nodejs )
